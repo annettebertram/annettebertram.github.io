@@ -4,113 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annette Bertram - Somatic Experiencing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            /* Hintergrundbild über die gesamte Seite */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #0C2B07; /* Dunkelgrün */
+            line-height: 1.6;
+        }
+
+        /* Oberer Kasten mit Hintergrundbild */
+        header {
             background-image: url('hintergrund.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 40px;
-            color: #0C2B07; /* Schwarzer Text für gute Lesbarkeit auf hellem Grund */
-            line-height: 1.6;
-            min-height: 100vh;
+            height: 40vh; /* Nimmt 40% der Bildschirmhöhe ein */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #0C2B07;
+            text-shadow: 0px 0px 10px rgba(255,255,255,0.7);
         }
 
-        /* Container ohne Box-Optik, nur zur Begrenzung der Textbreite */
-        .content-wrapper {
+        h1 {
+            font-family: 'Playfair Display', serif; /* Besonderer Font */
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Unterer Abschnitt mit gelbgrünem Hintergrund */
+        main {
+            background-color: #e2efd9; /* Simples Gelbgrün */
+            padding: 40px 20px;
+            min-height: 60vh;
+        }
+
+        .content-container {
             max-width: 800px;
             margin: 0 auto;
-            /* Ein leichter Textschatten verbessert die Lesbarkeit über Bildern */
-            text-shadow: 0px 0px 2px rgba(255,255,255,0.8);
         }
 
-        .profilbild {
-            width: 200px;
-            height: auto;
-            display: block;
-            margin-bottom: 30px;
-            border-radius: 2px;
-        }
-
-        h1 { font-size: 32px; margin: 0; }
-        .tagline { font-size: 22px; font-weight: bold; margin-bottom: 40px; }
-        
-        h2 { font-size: 20px; margin-top: 30px; }
-        
-        ul { padding-left: 20px; margin-bottom: 30px; }
-        li { margin-bottom: 10px; font-size: 18px; }
-
-        .beschreibung {
-            font-size: 18px;
-            max-width: 600px;
-            margin-bottom: 30px;
-        }
-
-        .angebot {
-            font-style: italic;
-            font-weight: bold;
-            margin-bottom: 40px;
-        }
+        h2 { font-size: 22px; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
 
         .info-sektion {
             margin-top: 40px;
+            border-top: 1px solid rgba(12, 43, 7, 0.2);
             padding-top: 20px;
-            border-top: 1px solid rgba(0,0,0,0.2);
-        }
-
-        .standorte-liste {
-            margin-bottom: 20px;
         }
 
         .kontakt-daten {
             font-weight: bold;
-            font-size: 18px;
+            margin-top: 20px;
         }
 
-        a { color: #000; text-decoration: none; }
+        a { color: #0C2B07; text-decoration: none; }
         a:hover { text-decoration: underline; }
+
+        /* Profilbild innerhalb der Infos */
+        .profilbild {
+            width: 150px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
-<div class="content-wrapper">
-    <img src="portrait.jpg" alt="Annette Bertram" class="profilbild">
-
+<header>
     <h1>Annette Bertram</h1>
     <div class="tagline">Somatic Experiencing | Alexandertechnik | Beratung</div>
+</header>
 
-    <div class="beschreibung">
-        <p>In meiner Praxis biete ich einen geschützten Rahmen, um zu mehr Resilienz, Selbstregulation und seelischer Balance zu finden.</p>
-        
-        <p>Seit 30 Jahren begleite ich Menschen körpertherapeutisch mit Alexandertechnik und klientenzentrierter Beratung. Die traumatherapeutische Methode Somatic Experiencing (SE) stellt nun eine wertvolle Erweiterung meiner Kompetenzen dar.</p>
-    </div>
+<main>
+    <div class="content-container">
+        <img src="portrait.jpg" alt="Annette Bertram" class="profilbild">
 
-    <h2>Individuelle Beratung und Begleitung bei:</h2>
-    <ul>
-        <li>chronischem Stress und Erschöpfungssymptomen </li>
-        <li>psychosomatischen Erkrankungen</li>
-        <li>Belastung durch traumatische Erfahrungen </li>
-    </ul>
+        <div class="beschreibung">
+            <p>In meiner Praxis biete ich einen geschützten Rahmen, um zu mehr Resilienz, Selbstregulation und seelischer Balance zu finden.</p>
+            <p>Seit 30 Jahren begleite ich Menschen körpertherapeutisch mit Alexandertechnik und klientenzentrierter Beratung. Die traumatherapeutische Methode Somatic Experiencing (SE) stellt nun eine wertvolle Erweiterung meiner Kompetenzen dar.</p>
+        </div>
 
-    <div class="info-sektion">
-        <div class="standorte-liste">
+        <h2>Individuelle Beratung und Begleitung bei:</h2>
+        <ul>
+            <li>chronischem Stress und Erschöpfungssymptomen</li>
+            <li>psychosomatischen Erkrankungen</li>
+            <li>Belastung durch traumatische Erfahrungen</li>
+        </ul>
+
+        <div class="info-sektion">
             <strong>Standorte:</strong><br>
             • Basel: Gerbergässlein 8 <br>
             • Offenburg: Praxisadresse auf Anfrage<br>
             • Freiburg: Kirchstraße 53
-        </div>
 
-        <div class="kontakt-daten">
-            Email: <a href="mailto:bertram.annette@t-online.de">bertram.annette@t-online.de</a> <br>
-            CH: +41 76 689 1797 | DE: +49 170 231 6555 
+            <div class="kontakt-daten">
+                Email: <a href="mailto:bertram.annette@t-online.de">bertram.annette@t-online.de</a> <br>
+                CH: +41 76 689 1797 | DE: +49 170 231 6555 
+            </div>
         </div>
     </div>
-</div>
+</main>
 
 </body>
 </html>
