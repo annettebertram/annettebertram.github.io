@@ -6,91 +6,113 @@
     <title>Annette Bertram - Somatic Experiencing</title>
     <style>
         body {
-            /* Hintergrundbild für die ganze Seite */
+            /* Hintergrundbild über die gesamte Seite */
             background-image: url('hintergrund.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            background-repeat: no-repeat;
+            
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 40px;
+            color: #000; /* Schwarzer Text für gute Lesbarkeit auf hellem Grund */
+            line-height: 1.6;
             min-height: 100vh;
         }
 
-        .flyer-box {
-            /* Leicht transparentes Weiß, damit das Bild durchschimmert */
-            background-color: rgba(255, 255, 255, 0.9); 
-            max-width: 550px;
-            padding: 40px;
-            border-radius: 5px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            color: #333;
-            line-height: 1.5;
+        /* Container ohne Box-Optik, nur zur Begrenzung der Textbreite */
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            /* Ein leichter Textschatten verbessert die Lesbarkeit über Bildern */
+            text-shadow: 0px 0px 2px rgba(255,255,255,0.8);
         }
 
         .profilbild {
-            width: 180px;
+            width: 200px;
             height: auto;
             display: block;
+            margin-bottom: 30px;
+            border-radius: 2px;
+        }
+
+        h1 { font-size: 32px; margin: 0; }
+        .tagline { font-size: 22px; font-weight: bold; margin-bottom: 40px; }
+        
+        h2 { font-size: 20px; margin-top: 30px; }
+        
+        ul { padding-left: 20px; margin-bottom: 30px; }
+        li { margin-bottom: 10px; font-size: 18px; }
+
+        .beschreibung {
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .angebot {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .info-sektion {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .standorte-liste {
             margin-bottom: 20px;
-            border: 1px solid #ddd;
         }
 
-        h1 { font-size: 26px; margin: 0 0 5px 0; color: #000; }
-        .subtitle { font-size: 18px; font-weight: bold; margin-bottom: 25px; color: #555; }
-        
-        ul { padding-left: 20px; margin: 15px 0; }
-        li { margin-bottom: 5px; }
-
-        .trennlinie {
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
+        .kontakt-daten {
+            font-weight: bold;
+            font-size: 18px;
         }
 
-        .standorte { margin-bottom: 15px; font-size: 0.95rem; }
-        .kontakt { font-weight: bold; }
-        
         a { color: #000; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-<div class="flyer-box">
+<div class="content-wrapper">
     <img src="portrait.jpg" alt="Annette Bertram" class="profilbild">
 
     <h1>Annette Bertram</h1>
-    <div class="subtitle">Somatic Experiencing | Alexandertechnik | Beratung</div>
+    <div class="tagline">Somatic Experiencing | Alexandertechnik | Beratung</div>
 
-    <p>Individuelle Beratung und Begleitung bei:</p>
-    <ul>
-        <li>chronischem Stress und Erschöpfungssymptomen</li>
-        <li>psychosomatischen Erkrankungen</li>
-        <li>Belastung durch traumatische Erfahrungen</li>
-    </ul>
-
-    <p>
-        In meiner Praxis biete ich einen geschützten Rahmen, um zu mehr Resilienz, 
-        Selbstregulation und seelischer Balance zu finden. Seit 30 Jahren begleite ich 
-        Menschen körpertherapeutisch.
-    </p>
-
-    <p><i>Im ersten Halbjahr 2025 biete ich reduzierte Einführungspreise an.</i></p>
-
-    <div class="trennlinie"></div>
-
-    <div class="standorte">
-        <strong>Standorte:</strong><br>
-        • Basel: Gerbergässlein 8<br>
-        • Offenburg: Praxisadresse auf Anfrage<br>
-        • Freiburg: Praxisadresse auf Anfrage
+    <div class="beschreibung">
+        <p>In meiner Praxis biete ich einen geschützten Rahmen, um zu mehr Resilienz, Selbstregulation und seelischer Balance zu finden[cite: 9].</p>
+        
+        <p>Seit 30 Jahren begleite ich Menschen körpertherapeutisch mit Alexandertechnik und klientenzentrierter Beratung[cite: 10]. Die traumatherapeutische Methode Somatic Experiencing (SE) stellt nun eine wertvolle Erweiterung meiner Kompetenzen dar[cite: 11].</p>
     </div>
 
-    <div class="kontakt">
-        Email: <a href="mailto:bertram.annette@t-online.de">bertram.annette@t-online.de</a><br>
-        CH: +41 76 689 1797 | DE: +49 170 231 6555
+    <h2>Individuelle Beratung und Begleitung bei:</h2>
+    <ul>
+        <li>chronischem Stress und Erschöpfungssymptomen [cite: 5]</li>
+        <li>psychosomatischen Erkrankungen [cite: 6]</li>
+        <li>Belastung durch traumatische Erfahrungen [cite: 7]</li>
+    </ul>
+
+    <p class="angebot">
+        Im ersten Halbjahr 2025 bis zu meinem Abschluss als SE-Practitioner biete ich reduzierte Einführungspreise an[cite: 12].
+    </p>
+
+    <div class="info-sektion">
+        <div class="standorte-liste">
+            <strong>Standorte:</strong><br>
+            • Basel: Gerbergässlein 8 <br>
+            • Offenburg: Praxisadresse auf Anfrage<br>
+            • Freiburg: Praxisadresse auf Anfrage
+        </div>
+
+        <div class="kontakt-daten">
+            Email: <a href="mailto:bertram.annette@t-online.de">bertram.annette@t-online.de</a> <br>
+            CH: +41 76 689 1797 | DE: +49 170 231 6555 
+        </div>
     </div>
 </div>
 
