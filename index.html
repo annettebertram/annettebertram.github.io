@@ -30,12 +30,6 @@
             overflow: hidden;
         }
 
-        header iframe {
-              width: 80%;
-              height: 80%;
-              border: none;
-              background: transparent;
-        }
 
         h1 {
             font-family: 'Playfair Display', serif; /* Besonderer Font */
@@ -49,15 +43,28 @@
             margin-top: 10px;
         }
 
-        .overlay-text {
-              position: absolute;
-              top: 70%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              max-width: 70%;
-              height: auto;
-              pointer-events: none;
+        .hero-text {
+            font-family: 'Optima', sans-serif;
+            font-size: 73px;
+            color: #003333;
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
+
+        .hero-text2 {
+            font-family: 'Optima', sans-serif;
+            font-size: 19px;
+            color: #003333;
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
 
 
         /* Unterer Abschnitt mit gelbgrünem Hintergrund */
@@ -105,7 +112,15 @@
 <body>
 
 <header>
-    <img src="text.png" class="overlay-text">
+<div class="hero-text">
+    Annette Bertram
+</div>
+    
+<div class="hero-text2">
+    Somatic Experiencing | Alexandertechnik 
+            Personzentrierte Beratung
+</div>
+    
 </header>
 
 <main>
